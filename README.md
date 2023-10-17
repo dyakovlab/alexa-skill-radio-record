@@ -1,2 +1,3 @@
-# alexa-skill-radio-record
-Alexa skill Lambda function
+# Alexa skill Lambda function for playing Radio Record
+
+https://www.radiorecord.ru/

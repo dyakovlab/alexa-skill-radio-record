@@ -1,0 +1,265 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "multipleValues": {
+                "enabled": true
+              },
+              "name": "StationName",
+              "type": "STATION_TYPE"
+            }
+          ],
+          "name": "PlayStationIntent",
+          "samples": [
+            "Start {StationName}",
+            "Play {StationName}"
+          ]
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Ambient"
+              }
+            },
+            {
+              "name": {
+                "value": "Trancehouse"
+              }
+            },
+            {
+              "name": {
+                "value": "House Hits"
+              }
+            },
+            {
+              "name": {
+                "value": "Trap"
+              }
+            },
+            {
+              "name": {
+                "value": "Tech House"
+              }
+            },
+            {
+              "name": {
+                "value": "Tropical"
+              }
+            },
+            {
+              "name": {
+                "value": "Breaks"
+              }
+            },
+            {
+              "name": {
+                "value": "Workout"
+              }
+            },
+            {
+              "name": {
+                "value": "Neurofunk"
+              }
+            },
+            {
+              "name": {
+                "value": "EDM"
+              }
+            },
+            {
+              "name": {
+                "value": "Organic"
+              }
+            },
+            {
+              "name": {
+                "value": "Bass House"
+              }
+            },
+            {
+              "name": {
+                "value": "VIP House"
+              }
+            },
+            {
+              "name": {
+                "value": "Trance Classics"
+              }
+            },
+            {
+              "name": {
+                "value": "Rap Classics"
+              }
+            },
+            {
+              "name": {
+                "value": "Rap Hits"
+              }
+            },
+            {
+              "name": {
+                "value": "Summer Lounge"
+              }
+            },
+            {
+              "name": {
+                "value": "Armin van Buuren"
+              }
+            },
+            {
+              "name": {
+                "value": "David Guetta"
+              }
+            },
+            {
+              "name": {
+                "value": "Tiesto"
+              }
+            },
+            {
+              "name": {
+                "value": "Phonk"
+              }
+            },
+            {
+              "name": {
+                "value": "Afro House"
+              }
+            },
+            {
+              "name": {
+                "value": "Nu Dance"
+              }
+            },
+            {
+              "name": {
+                "value": "Record Gold"
+              }
+            },
+            {
+              "name": {
+                "value": "Lo-Fi House"
+              }
+            },
+            {
+              "name": {
+                "value": "Party"
+              }
+            },
+            {
+              "name": {
+                "value": "Innocence"
+              }
+            },
+            {
+              "name": {
+                "value": "Pirate Station"
+              }
+            },
+            {
+              "name": {
+                "value": "Russian Gold"
+              }
+            },
+            {
+              "name": {
+                "value": "Rock"
+              }
+            },
+            {
+              "name": {
+                "value": "Trancemission"
+              }
+            },
+            {
+              "name": {
+                "value": "Summer Dance"
+              }
+            },
+            {
+              "name": {
+                "value": "Big Hits"
+              }
+            },
+            {
+              "name": {
+                "value": "Chill House"
+              }
+            },
+            {
+              "name": {
+                "value": "Remix"
+              }
+            },
+            {
+              "name": {
+                "value": "Deep"
+              }
+            },
+            {
+              "name": {
+                "value": "Chill-Out"
+              }
+            },
+            {
+              "name": {
+                "value": "Russian Hits"
+              }
+            },
+            {
+              "name": {
+                "value": "Russian Mix"
+              }
+            },
+            {
+              "name": {
+                "value": "Megamix"
+              }
+            },
+            {
+              "name": {
+                "value": "Record"
+              }
+            }
+          ],
+          "name": "STATION_TYPE"
+        }
+      ],
+      "invocationName": "radio record"
+    }
+  }
+}
