@@ -1,3 +1,4 @@
-# Alexa skill Lambda function for playing Radio Record
+# Alexa skill for playing Radio Record
+[NodeJS, Lambda, DynamoDB]
 
 https://www.radiorecord.ru/

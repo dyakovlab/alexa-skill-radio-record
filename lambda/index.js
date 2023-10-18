@@ -44,8 +44,6 @@ const PlayStationIntentHandler = {
               .speak(data.voice)
               .getResponse();
         }
-
-
     }
 };
 

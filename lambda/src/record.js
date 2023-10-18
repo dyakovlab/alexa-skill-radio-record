@@ -1,9 +1,9 @@
 const https = require('https');
+const Translator = require('./translator');
 
 class Record {
   constructor() {
     this.stationsUrl = 'https://www.radiorecord.ru/api/stations/';
-    this.baseStation = 'record';
     this.stations = [];
   }
 
@@ -43,11 +43,13 @@ class Record {
       this.stations = stationsData.result.stations;
       const station = this.stations.find(s => s.title.toLowerCase().includes(stationName))
       if (station) {
+        const translation = await Translator.translate(station.prefix)
+
         result.voice = `Playing ${stationName} on Radio Record`
         result.url = station.stream_hls
         result.metadata = {
-          title: station.title,
-          subtitle: station.tooltip,
+          title: translation.title ? translation.title : `${stationName.charAt(0).toUpperCase()}${stationName.slice(1)}`,
+          subtitle: translation.subtitle,
           art: {
             sources: [
               {
